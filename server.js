@@ -16,7 +16,9 @@ const app = express();
 
 
 app.use(cors({
-  origin: 'https://amnesia-qa.vercel.app',
+  origin: 
+    "http://localhost:3000",
+ 
   credentials: true
 }));
 

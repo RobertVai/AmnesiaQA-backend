@@ -69,11 +69,11 @@ const toggleLike = async (req, res) => {
     const hasLiked = question.likedBy.includes(userId);
     const hasDisliked = question.dislikedBy.includes(userId);
 
-    
+  
     question.likedBy = question.likedBy.filter(id => id.toString() !== userId);
     question.dislikedBy = question.dislikedBy.filter(id => id.toString() !== userId);
 
-    
+
     if (!hasLiked) {
       question.likedBy.push(userId);
     }
